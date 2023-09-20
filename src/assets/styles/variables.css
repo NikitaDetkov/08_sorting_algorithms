@@ -1,0 +1,13 @@
+:root {
+    --light-gray: rgb(200, 200, 200);
+    --dark-gray: rgb(70, 70, 70);
+
+
+    --dark-violet-color: rgb(22, 0, 42);
+    --light-main-color: rgb(184, 194, 194);
+    --light-green-color: rgb(95, 231, 72);
+    --average-main-color: rgb(110, 171, 171);
+    --dark-main-color:rgb(65, 103, 104);
+    --dark-additional-color: rgb(39, 58, 59);
+    --transparent-main-color: rgba(215, 228, 228, 0);
+}

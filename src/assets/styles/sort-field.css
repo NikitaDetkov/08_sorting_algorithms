@@ -1,0 +1,117 @@
+.sort-field {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    margin-top: 50px;
+
+    height: 250px;
+
+    padding: 0 30px;
+    align-items: flex-end;
+}
+
+.sort-elem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.sort-elem-num {
+    transition: opacity 0.5s linear;
+}
+
+.sort-elem-num.hide {
+    opacity: 0;
+}
+
+.sort-elem-line {
+    background-color: var(--dark-main-color);
+    border-radius: 2px;
+    width: 100%;
+    height: 0;
+
+    position: relative;
+
+    overflow: hidden;
+    transition: height 0.8s linear, background-color 0.2s linear;
+}
+
+.sort-elem-line.selected-item {
+    background-color: var(--dark-main-color);
+}
+
+.sort-elem-line.light {
+    background-color: var(--light-main-color);
+}
+
+.sort-elem-line.light-green {
+    background-color: var(--light-green-color) !important;
+}
+
+.sort-elem-line.dark {
+    background-color: var(--dark-additional-color);
+}
+
+.sort-elem-line.sorted {
+    background-color: var(--average-main-color);
+}
+
+.sort-elem-line div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    border-radius: 2px;
+    filter: blur(4px);
+}
+
+.sort-elem-flash-up {
+    animation: flashUp 0.8s forwards;
+    background: linear-gradient(white, var(--transparent-main-color));
+}
+
+.sort-elem-flash-down {
+    animation: flashDown 0.8s forwards;
+    background: linear-gradient(var(--transparent-main-color), white);
+}
+
+@keyframes flashUp {
+    0% {
+        height: 0px;
+        opacity: 0;
+    }
+    50% {
+        height: 100%;
+        bottom: 0px;
+        opacity: 1
+    }
+    100% {
+        height: 100%;
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes flashDown {
+    0% {
+        height: 100%;
+        bottom: 100%;
+        opacity: 0
+    }
+    50% {
+        height: 100%;
+        bottom: 0px;
+        opacity: 1
+    }
+    100% {
+        height: 0px;
+        opacity: 0;
+    }
+}
+

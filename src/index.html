@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <title>Sorting Algorithms</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Sorting algorithms</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="container sort-container">
+            <div class="input-array-container">
+                <h3>Enter an array separated by a space (up to 100 characters from 0 to 200)</h3>
+                <div class="input-wrapper">
+                    <input type="text" class="input-array" id="input-array" value="150 190 108 210 200 180 170 20 62 100 95 130 70">
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn" id="btn-set-array">Set array</button>
+                </div>
+            </div>
+            <div class="main-header">
+                <h3>Choose the sorting method</h3>
+            </div>
+
+            <div class="input-container">
+                <div class="sort-types">
+                    <div class="sort-types__elem">
+                        <input type="radio" name="sort-type" id="bubble" value="bubble" checked>
+                        <label for="bubble">Bubble</label>
+                    </div>
+                    <div class="sort-types__elem">
+                        <input type="radio" name="sort-type" id="selection" value="selection">
+                        <label for="selection">Selection</label>
+                    </div>
+                    <div class="sort-types__elem">
+                        <input type="radio" name="sort-type" id="fast" value="fast">
+                        <label for="fast">Fast</label>
+                    </div>
+                    <div class="sort-types__elem">
+                        <input type="radio" name="sort-type" id="insertion" value="insertion">
+                        <label for="insertion">Insertion</label>
+                    </div>
+                    <div class="sort-types__elem">
+                        <input type="radio" name="sort-type" id="shaker" value="shaker">
+                        <label for="shaker">Shaker</label>
+                    </div>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn" id="btn-sort">Sort</button>
+                    <button class="btn" id="btn-stop">Stop</button>
+                </div>
+            </div>
+
+            <div class="sort-field" id="sort-field"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__item">
+                    Sorting algorithms
+                </div>
+                <div class="footer__item">
+                    Detkov Nikita
+                </div>
+                <div class="footer__item">
+                    2023
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

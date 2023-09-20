@@ -1,0 +1,9 @@
+header {
+    flex-grow: 0;
+    padding: 15px 40px;
+    border-bottom: 1px solid var(--average-main-color);
+}
+
+header h2 {
+    font-weight: 300;
+}
